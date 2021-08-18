@@ -1,0 +1,14 @@
+{
+  "name": "api_automation",
+  "version": "1.0.0",
+  "description": "cypress Api automation ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bilal Waheed",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.3.0"
+  }
+}
