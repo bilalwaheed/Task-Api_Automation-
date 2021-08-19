@@ -1,7 +1,7 @@
 /// <reference types ="Cypress" />
 
 describe('Post user request', ()=>{
-    it('Creat test singel user', ()=>{
+    it('Creat test single user', ()=>{
         cy.fixture('createuser').then((payload)=> {
         cy.request({
             method : 'POST',
@@ -57,5 +57,7 @@ describe('Post user request', ()=>{
         }).then((res)=>{
             expect(res.status).to.eq(200)
         })
+
+ 
     })
 })

@@ -1,7 +1,7 @@
 /// <reference types ="Cypress" />
 
 describe('get api user tests', ()=>{
-    it('get singel user detail', ()=>{
+    it('get single user detail', ()=>{
         cy.request({
             method : 'GET',
             url : 'https://reqres.in/api/users/2'

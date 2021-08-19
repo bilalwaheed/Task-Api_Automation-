@@ -1,7 +1,7 @@
 /// <reference types ="Cypress" />
 
 describe('Patch user request', ()=>{
-    it('create test signal user', ()=>{
+    it('create test single user', ()=>{
         cy.request({
             method : 'POST',
             url : 'https://reqres.in/api/users',
@@ -29,12 +29,12 @@ describe('Patch user request', ()=>{
                 url: 'https://reqres.in/api/users/'+userId,
                 // ITS A PATCH REQUEST SO ALL FIELD ARE NOT CHANGED  
                 body:{
-                    "name": "bilal waheed",
+                    "name": "bilal waheed updated",
                     "job": "QA Eng updated",
                 }
             }).then((res)=>{
                 expect(res.status).to.eq(200)
-                expect(res.body).has.property('name', 'bilal waheed')
+                expect(res.body).has.property('name', 'bilal waheed updated')
 
             })
         })

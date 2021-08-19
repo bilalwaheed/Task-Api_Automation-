@@ -1,7 +1,7 @@
 /// <reference types ="Cypress" />
 
 describe('Put user request', ()=>{
-    it('create test singel user', ()=>{
+    it('create test single user', ()=>{
         cy.request({
             method : 'POST',
             url : 'https://reqres.in/api/users',
