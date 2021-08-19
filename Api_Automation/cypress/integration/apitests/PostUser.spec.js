@@ -7,6 +7,7 @@ describe('Post user request', ()=>{
             method : 'POST',
             url : 'https://reqres.in/api/users',
             // USER ID IS NOT ADDED IN POST BODY IT WILL AUTOMATICALLY ADDED
+            // IN BODY I AM USING JSON DATA FROM FIXTURES FOLDER  
             body:{
                 "name": payload.name,
                 "job": payload.job,
@@ -24,7 +25,7 @@ describe('Post user request', ()=>{
     })
     })
     // REGISTRATION WITH POST REQUEST
-    it('register user', ()=>{
+    it('register new user', ()=>{
         cy.request({
             method : 'POST',
             url : 'https://reqres.in/api/register',

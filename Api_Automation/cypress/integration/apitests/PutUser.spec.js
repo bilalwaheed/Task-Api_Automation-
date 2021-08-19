@@ -7,6 +7,7 @@ describe('Put user request', ()=>{
             url : 'https://reqres.in/api/users',
             // CREATIONDATE FIELD IS NOT ADDED IN BODY IT WILL AUTOMATICALLY ADDED ONCE USER IS CREATED
             // USER ID IS NOT ADDED IN POST BODY IT WILL AUTOMATICALLY ADDED ONCE USER IS CREATED
+            // IN BODY I AM USING HARD CODED DATA TO SHOW DIFFERENT APPROCH INSTEAD OF JSON DATA FROM FIXTURES FOLDER
             body:{
                 "name": "bilal",
                 "job": "QA Eng",
