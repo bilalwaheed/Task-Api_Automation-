@@ -1,4 +1,5 @@
 Help + Testing
+NOTE **FOR BETTER VIEW OF REAMME.MD FILE PLEASE OPEN IT IN EDIT VIEW MODE
 <!-- -------------------------------------------- -->
 The steps below will take you all the way through Cypress. It is assumed you have nothing installed except git.
 
