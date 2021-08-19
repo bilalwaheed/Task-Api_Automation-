@@ -6,6 +6,8 @@ describe('get api user tests', ()=>{
             method : 'GET',
             url : 'https://reqres.in/api/users/2'
         }).then((res)=>{
+            // FOR ASSEERTION I AM COMPARING ALL THE FIELDS ALTHOUGH WE CAN USE JAAVASCRIPT DICTIONARY 
+            // BUT SOME TIMES WE JUST NEED TO MAKE ASSERTION ON SELECTIVE FIELDS 
             expect(res.status).to.eq(200)
             expect(res.body.data.id).to.eq(2)
             expect(res.body.data.first_name).to.eq('Janet')

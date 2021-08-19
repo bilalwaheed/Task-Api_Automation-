@@ -1,7 +1,7 @@
 /// <reference types ="Cypress" />
 
 describe('Delete user request', ()=>{
-    it('create test signal user', ()=>{
+    it('create test singel user', ()=>{
         cy.request({
             method : 'POST',
             url : 'https://reqres.in/api/users',
@@ -16,6 +16,7 @@ describe('Delete user request', ()=>{
             expect(res.body).has.property('name','bilal')
             expect(res.body).has.property('job','QA Eng')
         }).then((res) =>{
+            // GETTING USER ID FROM RESPONSE BODY
             const userId = res.body.id
             // DELETE USER REQUEST
             cy.request({

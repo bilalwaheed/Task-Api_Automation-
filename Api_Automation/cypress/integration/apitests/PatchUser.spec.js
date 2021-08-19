@@ -12,7 +12,9 @@ describe('Patch user request', ()=>{
                 "job": "QA Eng",
             }
         }).then((res)=>{
+            //GETTING USER ID FROM RESPONSE BODY
             const userId = res.body.id
+            //GETTING CREATIONDATE FROM RESPONSE BODY
             const creationDate = res.body.createdAt
             expect(res.status).to.eq(201)
             expect(res.body).has.property('name','bilal')
@@ -21,15 +23,14 @@ describe('Patch user request', ()=>{
             expect(res.body).has.property('id', userId)
         }).then((res) =>{
             const userId = res.body.id
-            // patch user request
+            // PATCH USER REQUEST
             cy.request({
                 method:  "PATCH",
                 url: 'https://reqres.in/api/users/'+userId,
+                // ITS A PATCH REQUEST SO ALL FIELD ARE NOT CHANGED  
                 body:{
                     "name": "bilal waheed",
                     "job": "QA Eng updated",
-                    "id": "9",
-                    // "createdAt": "2021-08-19"
                 }
             }).then((res)=>{
                 expect(res.status).to.eq(200)

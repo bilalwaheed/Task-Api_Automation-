@@ -57,29 +57,5 @@ describe('Post user request', ()=>{
         }).then((res)=>{
             expect(res.status).to.eq(200)
         })
-
- 
     })
-
-
-        // NEGATIVE TEST CASE 
-        // WRONG USSER LOGIN WITH POST REQUEST
-        it('login wrong user', ()=>{
-            cy.request({
-                method : 'POST',
-                url : 'https://reqres.in/api/login',
-                headers : {
-                    'error' : "Missing password",
-                },
-                body:{
-                    "email": "peter@klaven",
-                }
-            }).then((res)=>{
-                // expect(res.body).has.property("error","Missing password")
-                expect(res.status).to.eq(400)
-            })
-    
-     
-        })
-
 })
