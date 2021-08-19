@@ -54,6 +54,7 @@ After Cloning this project from Github, run these commands:
 4: Run following command 
 => Command: ./node_modules/.bin/cypress open
 5: once you run the above command "cy" window will be open from where you can see my all tests.
+<img width="825" alt="Screenshot 2021-08-19 at 2 39 17 PM" src="https://user-images.githubusercontent.com/22905555/130046492-77acab87-07d0-4d10-b1be-54e567deb06a.png">
 6: Click any of them you will able to see the result.
 7: Tests names are given below 
     1: DeleteUser.spec.js
